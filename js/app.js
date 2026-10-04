@@ -149,6 +149,14 @@ document.addEventListener("keydown", (e) => {
       ?.scrollIntoView({ behavior: "smooth" });
   }
 });
-if (localStorage.getItem("theme") === "light")
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.remove("light");
+} else {
   document.body.classList.add("light");
+  localStorage.setItem("theme", "light");
+}
+
 renderList();
