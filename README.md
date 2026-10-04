@@ -4,7 +4,7 @@ TracePoint is a browser-based incident investigation simulator focused on SRE, D
 
 > Investigate the evidence → identify the root cause → choose the remediation → understand what happened.
 
-TracePoint uses simulated production incidents so learners can practise operational reasoning without connecting to real infrastructure.
+TracePoint uses simulated production incidents to enable learners practise operational reasoning without connecting to real infrastructure.
 
 ## Features
 
@@ -72,19 +72,19 @@ Each scenario contains its own incident data, evidence, timeline, possible cause
 tracepoint/
 │
 ├── index.html
-│
-├── style.css
-├── components.css
-├── animations.css
-│
-├── data.js
-├── scenarios.js
-├── timeline.js
-├── simulator.js
-├── evidence.js
-├── scoring.js
-├── ui.js
-└── app.js
+├── css
+│     ├── style.css
+│     ├── components.css
+│     └── animations.css
+└── js
+     ├── data.js
+     ├── scenarios.js
+     ├── timeline.js
+     ├── simulator.js
+     ├── evidence.js
+     ├── scoring.js
+     ├── ui.js
+     └── app.js
 ```
 
 ## What Each File Does
@@ -150,7 +150,6 @@ This keeps scenario definitions, simulation logic, evidence handling, scoring, a
 
 TracePoint intentionally uses a lightweight frontend stack:
 
-```
 * HTML5
 * CSS3
 * Vanilla JavaScript
@@ -158,7 +157,7 @@ TracePoint intentionally uses a lightweight frontend stack:
 * SVG/CSS visualisations
 * Browser-based state
 
-```
+
 
 
 ## Typical Investigation Workflow
