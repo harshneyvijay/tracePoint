@@ -150,13 +150,14 @@ This keeps scenario definitions, simulation logic, evidence handling, scoring, a
 
 TracePoint intentionally uses a lightweight frontend stack:
 
+```
 * HTML5
 * CSS3
 * Vanilla JavaScript
 * JavaScript ES Modules
 * SVG/CSS visualisations
 * Browser-based state
-
+```
 
 
 
