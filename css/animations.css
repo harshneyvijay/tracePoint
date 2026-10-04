@@ -1,0 +1,25 @@
+@keyframes pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+.live {
+  animation: pulse 1.5s infinite;
+}
+.flash {
+  animation: flash 0.5s ease;
+}
+@keyframes flash {
+  50% {
+    background: var(--surface3);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

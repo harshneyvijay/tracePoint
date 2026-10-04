@@ -1,0 +1,92 @@
+.card {
+  padding: 18px;
+}
+.incident-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-height: 220px;
+}
+.incident-card .card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.incident-card h2 {
+  font-size: 17px;
+  margin: 0;
+}
+.tag {
+  font-size: 10px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+.stat {
+  padding: 9px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+.stat b {
+  display: block;
+  font-size: 16px;
+}
+.stat span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.action-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: auto;
+}
+.select {
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px;
+  border-radius: 4px;
+}
+.progress {
+  height: 5px;
+  background: var(--surface3);
+  overflow: hidden;
+  border-radius: 3px;
+}
+.progress > i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.diag-box {
+  padding: 13px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  margin-top: 10px;
+}
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+.score-cell {
+  border: 1px solid var(--border);
+  padding: 14px;
+  background: var(--surface2);
+}
+.score-cell b {
+  font-size: 22px;
+  display: block;
+}
+@media (max-width: 650px) {
+  .score-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

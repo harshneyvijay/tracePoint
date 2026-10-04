@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Offline browser-based SRE incident response simulator."
+    />
+    <title>Incident Response Simulator</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">⌁</span>
+          <div>
+            <strong>INCIDENT RESPONSE SIMULATOR</strong
+            ><small>offline SRE training console</small>
+          </div>
+        </div>
+        <div class="top-actions">
+          <span id="sim-badge" class="badge sim">SIMULATED INCIDENT</span
+          ><span id="timer">00:00</span
+          ><button id="themeBtn" class="icon-btn" aria-label="Toggle theme">
+            ☼</button
+          ><button
+            id="shortcutsBtn"
+            class="icon-btn"
+            aria-label="Keyboard shortcuts"
+          >
+            ?
+          </button>
+        </div>
+      </header>
+      <main id="main"></main>
+      <footer class="footer">
+        <span
+          >All logs, metrics, network data and infrastructure states are
+          simulated for training.</span
+        ><span>Local-only · No external APIs</span>
+      </footer>
+    </div>
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true"></div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
